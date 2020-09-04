@@ -2,8 +2,7 @@ name: Build and deploy TailwindTraders Rewards ASP.NET MVC App to Azure Web App
 
 on:
   push:
-    branches:
-      - master
+    branches: [main, ]
 env:
   AZURE_WEBAPP_NAME: tailwind-traders    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: './Source'      # set this to the path to your web app project, defaults to the repository root
