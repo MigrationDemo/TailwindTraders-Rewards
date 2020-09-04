@@ -23,7 +23,8 @@ jobs:
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.0.0 
     - name: Run MSBuild
-      run: msbuild '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/TailwindTraders.Rewards.Website.sln'  
+      run: msbuild '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/TailwindTraders.Rewards.Website.sln'
+    - name: Pre Login to Azure
     - name: Login to Azure
       uses: azure/login@v1
       with:
